@@ -1,0 +1,263 @@
+body{
+    background-color: #f2f2f2;
+}
+
+/* navigation bar */
+/* nav for full screen */
+.nav-full{
+    display: flex;
+
+    background-color: #ffffff;
+    padding: 1%;
+}
+.nav-group{
+    margin-left: 5%;
+}
+.nav-items:last-child{
+    margin-right: 0%;
+    margin-left: 1%;
+
+}
+.nav-items{
+    margin-right: 2.5rem;
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+.nav-items a{
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+.nav-items:hover{
+    font-size: 1.5rem;
+
+}
+@media screen and (max-width: 1300px){
+    .nav-group{
+        margin-left: 2%;
+    }
+    .nav-items{
+        margin-right: 1.5rem;
+    }
+} 
+
+
+/* nav for mini screen */
+.dropdwn{
+    max-width: 8rem;
+}
+
+.dropbtn{ 
+    background-image:url(./images/icons8-menu-rounded-30.png);
+    text-align: center;
+    background-color: #FFFFFF;
+    background-repeat: no-repeat;
+    padding: 1.5rem;
+    border-radius: 50%;
+    background-position: center;
+    cursor: pointer;
+}
+
+.dropdown-list{
+    display: none;
+    border: 2px solid black;
+    width: 7rem;
+    position: absolute;
+}
+
+.dropdown-list a{
+    text-decoration: none;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    width: 5rem;
+    background-color: #f2f2f2;
+    /*  */
+    display: block;
+    text-align: center;
+
+}
+
+.dropdown-list a:hover{
+    background-color: #BEBEBE;
+}
+
+
+/* drop downhover */
+.dropdwn:hover .dropdown-list{
+    display: block;
+}
+
+nav{
+    display: flex;
+    background-color: #FFFFFF;
+}
+.navsearch{
+    margin-left: 15%;
+    min-width: 50%;
+    align-items: center;
+    padding: 0.6rem;
+}
+#searchinput{
+    width: 15rem;
+    height: 2rem;
+    background-image: url('./images/icons8-search-30.png');
+    /* background-position: 14px 12px; */
+    background-repeat: no-repeat;
+    padding-left: 8.5%;
+
+    border-radius: 1rem;
+}
+#search{
+    width: 3.5rem;
+    height: 2rem;
+    background-color: #BEBEBE;
+    color: #FFFFFF;
+    border-radius: 1rem;
+}
+
+.drop-log-img{
+    margin-left: 8%;
+}
+
+.drop-log-img img{
+    max-width: 2.3rem;
+    padding-top: 0.45rem;
+}
+
+.drop-log{
+    padding-top: 1rem;
+}
+
+.drop-log a{
+    
+    text-decoration: none;
+    font-size: large;
+    /* margin-bottom: 2rem; */
+}
+
+
+/* @media screen and (min-width: 1050px){
+    nav{
+        display: none;
+    }
+} */
+
+@media screen and (max-width: 650px){
+    .drop-log-img,.drop-log{
+        display: none;
+    }
+}
+
+
+/* nav variation accrding to screen size */
+
+@media screen and (min-width:1150px){
+    .nav-mini{
+        display: none;
+    }
+}
+@media screen and (max-width:1150px){
+    .nav-full{
+        display: none;
+    }
+}
+
+
+
+
+
+/* product info */
+.product{
+    background-color: #ffffff;
+}
+.small-img img{
+    margin: 0.75rem;
+}
+
+.product{
+    display: flex;
+    justify-content: space-around;
+}
+h1{
+    font-size: xx-large;
+}
+p{
+    font-size: larger;
+}
+.product-img{
+    margin: 25px;
+}
+
+.size-button{
+    border-radius: 50%;
+    padding: 10px;
+    background-color: #ffffff;
+}
+
+
+
+
+
+.shopping-item{
+    max-width: 14.5rem;
+    min-width: 17.5%;
+    min-height: 25rem;
+    border: 2px solid black;
+    border-radius: 3%;
+    padding: 1%;
+    margin: 20px;
+    background-color: #ffffff;
+    
+}
+.shopping-item img{
+    margin-left: 1%;
+}
+.shopping-item p{
+    text-align: center;
+    font-size: large;
+}
+.shopping-item button{
+    justify-content: center;
+    align-items: center;
+}
+
+
+.shopping-all-items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.shopping-item button{
+    background-color: #192841;border-radius: 10px;
+    padding: 1% 4%;
+    color: #FFFFFF;
+}
+
+
+@media screen and (max-width:950px) {
+    .product{
+        display: block;
+        padding-top: 1%;
+    }
+    .small-img{
+        width: 515px;
+    }
+
+
+}
+
+@media screen and (max-width:550px) {
+
+    .product-img img{
+        width: 400px;
+        height: 350px;
+    }
+    .small-img{
+        width: 400px;
+    }
+    .product-img .small-img img{
+        width: 80px;
+        height: 80px;
+        margin: 0.25rem;
+    }
+}

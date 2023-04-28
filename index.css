@@ -1,0 +1,465 @@
+body{
+    background-color: #f2f3f4;
+}
+
+/* navigation bar */
+/* nav for full screen */
+.nav-full{
+    display: flex;
+
+    background-color: #ffffff;
+    padding: 1%;
+}
+.nav-group{
+    margin-left: 5%;
+}
+.nav-items:last-child{
+    margin-right: 0%;
+    margin-left: 1%;
+
+}
+.nav-items{
+    margin-right: 2.5rem;
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: orange;
+}
+.nav-items a{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    /* color: orange; */
+}
+.nav-items:hover{
+    font-size: 1.5rem;
+    background-color: orange;
+    color: #ffffff;
+
+}
+@media screen and (max-width: 1300px){
+    .nav-group{
+        margin-left: 2%;
+    }
+    .nav-items{
+        margin-right: 1.5rem;
+    }
+} 
+
+
+/* nav for mini screen */
+.dropdwn{
+    max-width: 8rem;
+    
+    z-index: 1;
+}
+
+.dropbtn{ 
+    background-image:url(./images/icons8-menu-rounded-30.png);
+    text-align: center;
+    background-color: #FFFFFF;
+    background-repeat: no-repeat;
+    padding: 1.5rem;
+    border-radius: 50%;
+    background-position: center;
+    cursor: pointer;
+}
+
+.dropdown-list{
+    display: none;
+    border: 2px solid black;
+    width: 7rem;
+    position: absolute;
+    z-index: 1;
+}
+
+.dropdown-list a{
+    text-decoration: none;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    width: 5rem;
+    background-color: #f2f2f2;
+    color: orange;
+    display: block;
+    text-align: center;
+    z-index: 1;
+
+}
+
+.dropdown-list a:hover{
+    background-color: orange;
+    color: #ffffff;
+    z-index: 1;
+}
+.dropdown-list a:active{
+    color: black;
+}
+
+/* drop downhover */
+.dropdwn:hover .dropdown-list{
+    display: block;
+}
+
+nav{
+    display: flex;
+    background-color: #FFFFFF;
+}
+.navsearch{
+    margin-left: 15%;
+    min-width: 50%;
+    align-items: center;
+    padding: 0.6rem;
+}
+#searchinput{
+    width: 15rem;
+    height: 2rem;
+    background-image: url('./images/icons8-search-30.png');
+    /* background-position: 14px 12px; */
+    background-repeat: no-repeat;
+    padding-left: 8.5%;
+
+    border-radius: 1rem;
+}
+#search{
+    width: 3.5rem;
+    height: 2rem;
+    color: #FFFFFF;
+    border-radius: 1rem;
+    background-color: orange;
+}
+
+.drop-log-img{
+    margin-left: 8%;
+}
+
+.drop-log-img img{
+    max-width: 2.3rem;
+    padding-top: 0.45rem;
+}
+
+.drop-log{
+    padding-top: 1rem;
+}
+
+.drop-log a{
+    
+    text-decoration: none;
+    font-size: large;
+    color: orange;
+    /* margin-bottom: 2rem; */
+}
+
+.drop-log a:hover{
+    color: #ffffff;
+    background-color: orange;
+}
+
+.drop-log a:active{
+    color: black;
+}
+
+/* @media screen and (min-width: 1050px){
+    nav{
+        display: none;
+    }
+} */
+
+@media screen and (max-width: 650px){
+    .drop-log-img,.drop-log{
+        display: none;
+    }
+}
+
+
+/* nav variation accrding to screen size */
+
+@media screen and (min-width:1150px){
+    .nav-mini{
+        display: none;
+    }
+}
+@media screen and (max-width:1150px){
+    .nav-full{
+        display: none;
+    }
+}
+
+/* image size animation*/
+
+/* .image-animation{
+    min-width: 100%;
+    height: 500px;
+    animation-name: example;
+    animation-duration: 20s;
+    animation-direction: normal;
+    background-size: cover;
+    animation-iteration-count:infinite;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    background-image: url(./images/images\ \(8\).jpeg);
+  }
+  
+  @keyframes example {
+    5%   {background-image: url(./images/images\ \(8\).jpeg);
+          background-repeat: no-repeat;}
+    25%  {background-image: url(./images/images\ \(4\).jpeg);
+           background-repeat: no-repeat;}
+    50%  {background-image: url(./images/images\ \(5\).jpeg);
+          background-repeat: no-repeat;}
+    100% {background-image: url(./images/images\ \(2\).jpeg);
+          background-repeat: no-repeat;}
+  } */
+  /* .slideshow-container {
+    position: relative;
+    max-width: 100%;
+    height: 10rem;
+  }
+  
+  .slideshow {
+      margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .slideshow img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .prev,
+  .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    cursor: pointer;
+    size: 2cm;
+    font-size: 30px;
+      color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s ease;
+  
+  }
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
+   */
+
+  /* .image-animation {
+    animation: example 10s infinite;
+  } */
+  
+  /* section images */
+
+  .shopping-item{
+    max-width: 14.5rem;
+    min-width: 17.5%;
+    min-height: 25rem;
+    border: 0.75px solid orange;
+    border-radius: 3%;
+    padding: 1%;
+    margin: 20px;
+    background-color: #ffffff;
+    
+}
+
+.shopping-item:hover{
+    border: 2.5px solid orange;
+}
+
+.shopping-item img{
+    margin-left: 1%;
+}
+.shopping-item p{
+    text-align: center;
+    font-size: large;
+}
+.shopping-item button{
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+}
+
+
+.shopping-all-items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.shopping-item button{
+    border: 1px solid orange;
+    border-radius: 10px;
+    padding: 1% 4%;
+    color: black;
+}
+
+.shopping-item button:hover{
+    color: #ffffff;
+    background-color: orange;
+}
+
+.shopping-item button:active{
+    color: black;
+    background-color: orange;
+}
+/* Footer */
+footer,footer span, footer a, footer h3, footer address,footer address b{
+    background-color: #FFFFFF;
+}
+footer{
+    padding: 1%;
+}
+
+
+/* bot */
+
+.chatbox {
+    position: fixed;
+    padding: 5px;
+    bottom: 30px;
+    right: 30px;
+}
+
+/* CONTENT IS CLOSE */
+.chatbox__support {
+    
+    display: flex;
+    flex-direction: column;
+    background: #eee;
+    width: 300px;
+    height: 350px;
+    z-index: -123456;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+/* CONTENT ISOPEN */
+.chatbox--active {
+    transform: translateY(-40px);
+    z-index: 123456;
+    opacity: 1;
+    
+}
+
+/* BUTTON */
+.chatbox__button {
+    text-align: right;
+}
+
+
+/* HEADER */
+.chatbox__header {
+    position: sticky;
+    top: 0;
+    background: orange;
+}
+.chatbox__header h2{
+    padding-left: 5%;
+}
+/* MESSAGES */
+.chatbox__messages {
+    padding: 5%;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    flex-direction: column-reverse;
+}
+
+.messages__item {
+    background: orange;
+    max-width: 60.6%;
+    width: fit-content;
+}
+
+.messages__item--operator {
+    margin-left: auto;
+}
+
+.messages__item--visitor {
+    margin-right: auto;
+}
+
+/* FOOTER */
+.chatbox__footer {
+    padding: 5%;
+    position: sticky;
+    bottom: 0;
+    margin-top: 10px;
+}
+
+.chatbox__footer input{
+    width: 85%;
+    height: 1.5rem;
+}
+.chatbox__footer button{
+    width: 10%;
+    height: 1.9rem;
+}
+.messages__item--typing {
+    will-change: transform;
+    width: auto;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 15px 20px;
+    display: table;
+    margin-right: auto;
+    position: relative;
+    animation: 2s bulge infinite ease-out;
+}
+
+.messages__item--typing::before,
+.messages__item--typing::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: -2px;
+      height: 10px;
+      width: 10px;
+      border-radius: 50%;
+}
+.messages__item--typing::after {
+      height: 10px;
+      width: 10px;
+      left: -10px;
+      bottom: -10px;
+}
+span.messages__dot {
+    height: 8px;
+    width: 8px;
+    float: left;
+    margin: 0 1px;
+    background-color: #9E9EA1;
+    display: block;
+    border-radius: 50%;
+    opacity: 0.4;
+    animation: 1s blink infinite;
+}
+  
+@keyframes blink {
+    50% {
+        opacity: 1;
+    }
+}
+  
+@keyframes bulge {
+    50% {
+        transform: scale(1.05);
+    }
+}
+  
